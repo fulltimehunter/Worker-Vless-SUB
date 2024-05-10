@@ -129,11 +129,12 @@ let noTLS = true; //改为 true , 将不做域名判断 始终返回noTLS节点
 let link = '';
 let edgetunnel = 'ed';
 let RproxyIP = 'false';
-let proxyIPs = [
+let proxyIPs = 'false';
+//let proxyIPs = [
 	//'proxyip.aliyun.fxxk.dedyn.io',
 	//'proxyip.multacom.fxxk.dedyn.io',
 	//'proxyip.vultr.fxxk.dedyn.io',
-];
+//];
 let CMproxyIPs = [
 	//{ proxyIP: "proxyip.fxxk.dedyn.io", type: "HK" },
 ];
