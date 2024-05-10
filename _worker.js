@@ -5,43 +5,134 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	'icook.tw:2053#官方优选域名',
-	'cloudflare.cfgo.cc#优选官方线路',
+‘time.cloudflare.com:2087#darkangel',
+‘shopify.com:2087#darkangel',
+‘time.is:2087#darkangel',
+‘icook.hk:2087#darkangel',
+‘icook.tw:2087#darkangel',
+‘ip.sb:2087#darkangel',
+‘japan.com:2087#darkangel',
+‘malaysia.com:2087#darkangel',
+‘russia.com:2087#darkangel',
+‘singapore.com:2087#darkangel',
+‘skk.moe:2087#darkangel',
+‘www.visa.com:2087#darkangel',
+‘www.visa.com.sg:2087#darkangel',
+‘www.visa.com.hk:2087#darkangel',
+‘www.visa.com.tw:2087#darkangel',
+‘www.visa.co.jp:2087#darkangel',
+‘www.visakorea.com:2087#darkangel',
+‘www.gco.gov.qa:2087#darkangel',
+‘www.gov.se:2087#darkangel',
+‘www.gov.ua:2087#darkangel',
+‘www.digitalocean.com:2087#darkangel',
+‘www.csgo.com:2087#darkangel',
+‘www.shopify.com:2087#darkangel',
+‘www.whoer.net:2087#darkangel',
+‘www.whatismyip.com:2087#darkangel',
+‘www.ipget.net:2087#darkangel',
+‘www.hugedomains.com:2087#darkangel',
+‘www.udacity.com:2087#darkangel',
+‘www.4chan.org:2087#darkangel',
+‘www.okcupid.com:2087#darkangel',
+‘www.glassdoor.com:2087#darkangel',
+‘www.udemy.com:2087#darkangel',
+‘www.baipiao.eu.org:2087#darkangel',
+‘cdn.anycast.eu.org:2087#darkangel',
+‘cdn-all.xn--b6gac.eu.org:2087#darkangel',
+‘cdn-b100.xn--b6gac.eu.org:2087#darkangel',
+‘xn--b6gac.eu.org:2087#darkangel',
+‘edgetunnel.anycast.eu.org:2087#darkangel',
+‘alejandracaiccedo.com:2087#darkangel',
+‘nc.gocada.co:2087#darkangel',
+‘log.bpminecraft.com:2087#darkangel',
+‘www.boba88slot.com:2087#darkangel',
+‘gur.gov.ua:2087#darkangel',
+‘www.zsu.gov.ua:2087#darkangel',
+‘www.iakeys.com:2087#darkangel',
+‘edtunnel-dgp.pages.dev:2087#darkangel',
+‘www.d-555.com:2087#darkangel',
+‘fbi.gov:2087#darkangel',
 ];
 
 // 设置优选地址api接口
-let addressesapi = [
-	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+//let addressesapi = [
+//	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
-];
+//];
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
 let addressesnotls = [
-	'www.visa.com.sg#官方优选域名',
-	'www.wto.org:8080#官方优选域名',
-	'www.who.int:8880#官方优选域名',
+‘time.cloudflare.com:2086#darkangel',
+‘shopify.com:2086#darkangel',
+‘time.is:2086#darkangel',
+‘icook.hk:2086#darkangel',
+‘icook.tw:2086#darkangel',
+‘ip.sb:2086#darkangel',
+‘japan.com:2086#darkangel',
+‘malaysia.com:2086#darkangel',
+‘russia.com:2086#darkangel',
+‘singapore.com:2086#darkangel',
+‘skk.moe:2086#darkangel',
+‘www.visa.com:2086#darkangel',
+‘www.visa.com.sg:2086#darkangel',
+‘www.visa.com.hk:2086#darkangel',
+‘www.visa.com.tw:2086#darkangel',
+‘www.visa.co.jp:2086#darkangel',
+‘www.visakorea.com:2086#darkangel',
+‘www.gco.gov.qa:2086#darkangel',
+‘www.gov.se:2086#darkangel',
+‘www.gov.ua:2086#darkangel',
+‘www.digitalocean.com:2086#darkangel',
+‘www.csgo.com:2086#darkangel',
+‘www.shopify.com:2086#darkangel',
+‘www.whoer.net:2086#darkangel',
+‘www.whatismyip.com:2086#darkangel',
+‘www.ipget.net:2086#darkangel',
+‘www.hugedomains.com:2086#darkangel',
+‘www.udacity.com:2086#darkangel',
+‘www.4chan.org:2086#darkangel',
+‘www.okcupid.com:2086#darkangel',
+‘www.glassdoor.com:2086#darkangel',
+‘www.udemy.com:2086#darkangel',
+‘www.baipiao.eu.org:2086#darkangel',
+‘cdn.anycast.eu.org:2086#darkangel',
+‘cdn-all.xn--b6gac.eu.org:2086#darkangel',
+‘cdn-b100.xn--b6gac.eu.org:2086#darkangel',
+‘xn--b6gac.eu.org:2086#darkangel',
+‘edgetunnel.anycast.eu.org:2086#darkangel',
+‘alejandracaiccedo.com:2086#darkangel',
+‘nc.gocada.co:2086#darkangel',
+‘log.bpminecraft.com:2086#darkangel',
+‘www.boba88slot.com:2086#darkangel',
+‘gur.gov.ua:2086#darkangel',
+‘www.zsu.gov.ua:2086#darkangel',
+‘www.iakeys.com:2086#darkangel',
+‘edtunnel-dgp.pages.dev:2086#darkangel',
+‘www.d-555.com:2086#darkangel',
+‘fbi.gov:2086#darkangel',
 ];
 
 // 设置优选noTLS地址api接口
-let addressesnotlsapi = [
-	'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
-];
+//let addressesnotlsapi = [
+//	'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+//];
 
-let DLS = 8;//速度下限
-let addressescsv = [
+//let DLS = 8;//速度下限
+//let addressescsv = [
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
-];
+//];
 
-let subconverter = "apiurl.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
-let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅转换配置文件
-let noTLS = false; //改为 true , 将不做域名判断 始终返回noTLS节点
+let subconverter = "convert.520299.xyz"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+let subconfig = "https://github.com/fulltimehunter/Worker-Vless/blob/mian/ACL4SSR.ini"; //订阅转换配置文件
+let noTLS = true; //改为 true , 将不做域名判断 始终返回noTLS节点
 let link = '';
 let edgetunnel = 'ed';
 let RproxyIP = 'false';
 let proxyIPs = [
-	'proxyip.aliyun.fxxk.dedyn.io',
-	'proxyip.multacom.fxxk.dedyn.io',
-	'proxyip.vultr.fxxk.dedyn.io',
+	//'proxyip.aliyun.fxxk.dedyn.io',
+	//'proxyip.multacom.fxxk.dedyn.io',
+	//'proxyip.vultr.fxxk.dedyn.io',
 ];
 let CMproxyIPs = [
 	//{ proxyIP: "proxyip.fxxk.dedyn.io", type: "HK" },
